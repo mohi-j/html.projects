@@ -1,0 +1,39 @@
+.features .features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 95%;
+  margin: 50px 20px;
+  justify-content: center;
+  direction: ltr;
+  position: relative;
+  animation: resize 1s ease-in-out;
+}
+.brands {
+  display: contents;
+  text-align: center;
+  align-items: center;
+  & div:hover {
+    background: rgba(51, 0, 51, 0.681);
+  }
+  & .fa-brands {
+    padding-right: 10px;
+    font-size: x-large;
+    color: rgb(255, 204, 0);
+  }
+  & .fa-brands:hover {
+    color: rgb(255, 204, 0);
+  }
+}
+.brand1,
+.brand2,
+.brand3 {
+  display: contents;
+  & div{
+      border: 1px solid rgba(180, 176, 176, 0.681);
+      padding-bottom: 20px;
+      padding-top: 10px;
+      border-radius: 5px;
+  }
+}
+

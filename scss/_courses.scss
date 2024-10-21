@@ -1,0 +1,96 @@
+.courses-container {
+  display: block;
+}
+.courses-title {
+  margin: 20px 20px;
+  & h2 {
+    color: #ccc;
+    font-size: 20px;
+  }
+  & h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgb(222, 179, 23);
+    margin: 5px 10px;
+  }
+  & p {
+    font-weight: bolder;
+    font-size: 27px;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  & .card {
+    width: 32%;
+    direction: ltr;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  & .card img {
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+}
+.price {
+  display: flex;
+  direction: ltr;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  & h4 {
+    background-color: rgb(255, 204, 0);
+    color: #fff;
+    border-radius: 3px;
+    padding: 4px 10px;
+  }
+  & p {
+    font-weight: bolder;
+  }
+}
+.name-course {
+  padding: 5px 10px;
+}
+
+.teacher {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  justify-content: space-between;
+  direction: ltr;
+  padding: 5px 5px;
+  cursor: pointer;
+
+  & .icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+      }
+  & .name {
+    display: flex;
+    text-align: center;
+    padding: 0 10px;
+    & img {
+      display: flex;
+      width: 11%;
+      border-radius: 50%;
+      align-items: center;
+    }
+    & h5 {
+      padding-left: 10px;
+    }
+  }
+}
+
+.icon .fa-heart{
+  color: rgb(255,204, 0);
+}
+hr {
+  color: rgb(138, 135, 135);
+}

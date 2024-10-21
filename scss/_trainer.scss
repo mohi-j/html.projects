@@ -1,0 +1,43 @@
+.trainer .trainer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+    & .card-trainer {
+      display: block;
+      width: 32%;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(51, 0, 51, 0.1);
+      & img {
+        width: 100%;
+      }
+      & h4 {
+        font-weight: 800;
+      }
+      & p {
+        padding: 0 10px;
+        color: rgb(86, 86, 87);
+      }
+      & p,
+      i,
+      h4 {
+        padding-top: 10px;
+        color: rgb(86, 86, 87);
+      }
+      & .social_media_icon .fa, .fab{
+        color: rgb(51, 0, 51);
+        cursor: pointer;
+      }
+    }
+  }
+ 
+  
+  /* ===========Media */
+  @media (max-width:992px){
+    main .trainer .trainer-container{
+      display: block;
+  
+    }
+  }
